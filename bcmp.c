@@ -9,8 +9,8 @@ int main(int argc, char *argv[]) {
     }
 
     // Open the two files
-    FILE *file1 = fopen(argv[1], "r");
-    FILE *file2 = fopen(argv[2], "r");
+    FILE *file1 = fopen(argv[1], "rb");
+    FILE *file2 = fopen(argv[2], "rb");
     if (file1 == NULL || file2 == NULL) {
         printf("Error: Could not open files\n");
         return 1;
